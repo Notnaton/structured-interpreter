@@ -7,7 +7,11 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
+langchain = "^0.1.16"
+litellm = "^1.35.17"
 
+[tool.poetry.scripts]
+llm = "structured_interpreter.llm:main"
 
 [build-system]
 requires = ["poetry-core"]
